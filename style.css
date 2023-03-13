@@ -8,6 +8,13 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.button {
+    background-color: #0061FF;
+    color: white;
+    border: 0px;
+    padding: 9px 16px;   
+}
+
 .big-container {
     width: 1100px;
     margin-inline: auto;
@@ -31,6 +38,7 @@ header nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        z-index: 50;
 }
 
 header nav ul {
@@ -48,13 +56,6 @@ header nav li {
 header nav a {
     text-decoration: none;
     color: black;
-}
-
-header nav button {
-    background-color: #0061FF;
-    color: white;
-    border: 0px;
-    padding: 9px 16px;
 }
 
 /* SECTION */
@@ -86,17 +87,13 @@ header section h1 {
 }
 
 #section-flex button {
-    background-color: #0061FF;
-    color: white;
-    border: 0px;
-    padding: 9px 16px;
     margin-top: 2em;
     margin-bottom: 2em;
 }
 
 #section-flex i {
     font-size: 40px;
-    margin-top: 1.5em;
+    margin-top: 1.2em;
 }
 
 
@@ -105,10 +102,14 @@ main {
     margin-top: 7em;
 }
 
+main section h2 {
+    font-size: 1.8em;
+}
+
 /* SECTION - FATTURAZIONE */
 #fatturazione {
-    margin-top: 2.55rem;
-    margin-bottom: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 
 #fatturazione .select-circle {
@@ -120,38 +121,114 @@ main {
 }
 
 /* SECTION - PIANI */
-#piani-flex {
-    display: flex;
-    justify-content: space-between;
-    gap: 1em;
-
-}
-
-#piani-flex .piani {
-    flex: 0 0 calc((100% / 3) - 1em);
-    border: solid grey;
-
-}
-
-#piani-flex .piani .titolo-piano {
-    padding: 20px;
-    border-bottom: solid grey;
-    text-align: center;
-}
-
-#piani-flex .piani .piano-container {
+/* container */
+.piani-flex .piani .piano-container {
+    font-size: 0.9em;
     width: 80%;
     margin-inline: auto;
     margin-top: 1.5em;
 }
 
-#piani-flex .piani .prezzo-piano {
+/* flex */
+.piani-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+/* generici */
+.piani-flex h3 {
+    font-size: 1.5em;
+}
+
+/* settaggio piani */
+.piani-flex .piani {
+    flex: 0 0 calc((100% / 3) - 1em);
+    border: solid rgb(205, 205, 205);
+    margin-bottom: 2.5em;
+}
+
+/* prime informazioni piano */
+.titolo-piano {
+    margin-inline: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid rgb(205, 205, 205);
+    text-align: center;
+}
+
+.piani-flex .piani .prezzo-piano {
     font-weight: bold;
+    font-size: 0.9em;
     margin-top: 1.5em;
 }
 
-#piani-flex .piani .info-prezzo-piano {
+.piani-flex .piani .info-prezzo-piano {
     color: grey;
     margin-top: 0.5em;
     margin-bottom: 2.5em;
+}
+
+/* lista benefici */
+.piani-flex .piani ul {
+    --fa-li-margin: 1em;
+    margin-bottom: 3rem;
+}
+
+.piani-flex .piani li {
+    margin-bottom: 1.3em;
+}
+
+/* button */
+.piani-flex .piani .button {
+    margin-bottom: 2rem;
+}
+
+.piani-flex .piani hr {
+    width: 3em;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+
+.piani-flex .piani .bold-piano {
+    font-weight: bold;
+    margin-bottom: 1.5em;
+}
+
+/* lista finale */
+.piani-flex .piani li .blue {
+    color:#0061FF;
+}
+
+/* piano 4 - titolo piano */
+main #piano-4 {
+    border: solid rgb(205, 205, 205);
+}
+
+/* piano 4 - info del piano */
+main #piano-4 #info-piano-4 {
+    width: 90%;
+    margin-inline: auto;
+}
+
+#info-piano-4 ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+#info-piano-4 h3 {
+    font-size: 1.5em;
+}
+
+#info-piano-4 p {
+    font-weight: bold;
+    margin-top: 0.7em;
+    margin-bottom: 3em;
+}
+
+#info-piano-4 div {
+    width: 70%;
+    margin-bottom: 1.7em;
 }
