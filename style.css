@@ -1,0 +1,157 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.big-container {
+    width: 1100px;
+    margin-inline: auto;
+}
+
+.container {
+    width: 950px;
+    margin-inline: auto;
+}
+
+/*--------- HEADER ---------*/
+
+/* NAV */
+header nav {
+    height: fit-content;
+    width: 100%;
+    background-color: white;
+     position: fixed;
+     top: 0;
+     left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+header nav li {
+    margin: 14px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav button {
+    background-color: #0061FF;
+    color: white;
+    border: 0px;
+    padding: 9px 16px;
+}
+
+/* SECTION */
+header section {
+    background-color: rgb(180,208,231);
+    height: 39.5em;
+    margin-top: 77.5px;
+}
+
+header section h1 {
+    font-size: 77px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    line-height: 1.3em;
+}
+
+#section-flex {
+    display: flex;
+}
+
+#section-flex ul {
+    flex: 0 0 50%;
+    list-style: none;
+}
+
+#section-flex img {
+    flex: 0 0 50%;
+    width: 750px;
+}
+
+#section-flex button {
+    background-color: #0061FF;
+    color: white;
+    border: 0px;
+    padding: 9px 16px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#section-flex i {
+    font-size: 40px;
+    margin-top: 1.5em;
+}
+
+
+/*--------- MAIN ---------*/
+main {
+    margin-top: 7em;
+}
+
+/* SECTION - FATTURAZIONE */
+#fatturazione {
+    margin-top: 2.55rem;
+    margin-bottom: 2rem;
+}
+
+#fatturazione .select-circle {
+    color: #0061FF;
+}
+
+#fatturazione .select-text {
+    margin-right: 2em;
+}
+
+/* SECTION - PIANI */
+#piani-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+
+}
+
+#piani-flex .piani {
+    flex: 0 0 calc((100% / 3) - 1em);
+    border: solid grey;
+
+}
+
+#piani-flex .piani .titolo-piano {
+    padding: 20px;
+    border-bottom: solid grey;
+    text-align: center;
+}
+
+#piani-flex .piani .piano-container {
+    width: 80%;
+    margin-inline: auto;
+    margin-top: 1.5em;
+}
+
+#piani-flex .piani .prezzo-piano {
+    font-weight: bold;
+    margin-top: 1.5em;
+}
+
+#piani-flex .piani .info-prezzo-piano {
+    color: grey;
+    margin-top: 0.5em;
+    margin-bottom: 2.5em;
+}
