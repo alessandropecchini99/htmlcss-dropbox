@@ -25,6 +25,10 @@ body {
     margin-inline: auto;
 }
 
+h3 {
+    font-size: 1.5em;
+}
+
 /*--------- HEADER ---------*/
 
 /* NAV */
@@ -102,7 +106,7 @@ main {
     margin-top: 7em;
 }
 
-main section h2 {
+main h2 {
     font-size: 1.8em;
 }
 
@@ -134,11 +138,6 @@ main section h2 {
     display: flex;
     justify-content: space-between;
     gap: 1em;
-}
-
-/* generici */
-.piani-flex h3 {
-    font-size: 1.5em;
 }
 
 /* settaggio piani */
@@ -218,10 +217,6 @@ main #piano-4 #info-piano-4 {
     margin-top: 2em;
 }
 
-#info-piano-4 h3 {
-    font-size: 1.5em;
-}
-
 #info-piano-4 p {
     font-weight: bold;
     margin-top: 0.7em;
@@ -231,4 +226,73 @@ main #piano-4 #info-piano-4 {
 #info-piano-4 div {
     width: 70%;
     margin-bottom: 1.7em;
+}
+
+
+/* SEZIONE "ENTRA IN COTATTO CON DROPBOX */
+.contatto-dropbox {
+    height: 45em;
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+.contatto-dropbox img {
+    width: 560px;
+}
+
+.contatto-dropbox #info-contatto {
+    width: 33%;
+}
+
+.contatto-dropbox #info-contatto p {
+    margin-top: 1em;
+    margin-bottom: 1.7em;
+}
+
+.contatto-dropbox #info-contatto button {
+    padding: 9px 16px;  
+    background-color: white;
+    border: solid 1px grey;
+}
+
+
+/* SEZIONE "BUSINESS" */
+main #flex-business {
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+#flex-business .card {
+    flex: 0 0 calc((100% / 3) - 1em);
+}
+
+#flex-business img {
+    width: 100%;
+    margin-top: 2.5em;
+}
+
+#flex-business p {
+    margin-top: 1.5em;
+}
+
+/* dati business */
+main section .dati-business {
+    width: 50%;
+}
+
+main section .dati-business h2{
+    margin-top: 7em;
+    margin-bottom: 2em;
+}
+
+
+/* DESIGNIT */
+main .loghi {
+    display: flex;
+    flex-wrap: wrap;
+    
 }
