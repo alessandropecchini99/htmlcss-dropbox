@@ -16,12 +16,12 @@ body {
 }
 
 .big-container {
-    width: 1100px;
+    width: 70%;
     margin-inline: auto;
 }
 
 .container {
-    width: 950px;
+    width: 55%;
     margin-inline: auto;
 }
 
@@ -65,7 +65,7 @@ header nav a {
 /* SECTION */
 header section {
     background-color: rgb(180,208,231);
-    height: 39.5em;
+    height: 20%;
     margin-top: 77.5px;
 }
 
@@ -78,26 +78,31 @@ header section h1 {
 
 #section-flex {
     display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
-#section-flex ul {
-    flex: 0 0 50%;
-    list-style: none;
-}
-
-#section-flex img {
-    flex: 0 0 50%;
-    width: 750px;
+#section-flex #section-text {
+    flex-direction: column;
+    height: fit-content;
+    flex: 1 1 30%;
 }
 
 #section-flex button {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+#section-flex img {
+    flex: 1 1 70%;
+    min-width: 600px;
+    margin-bottom: -100px;
 }
 
 #section-flex i {
     font-size: 40px;
-    margin-top: 1.2em;
+    margin-top: 2em;
+    margin-bottom: 0.2em;
 }
 
 
@@ -290,9 +295,106 @@ main section .dati-business h2{
 }
 
 
-/* DESIGNIT */
-main .loghi {
+/* LOGHI CLIENTI */
+main #sezione-loghi-flex {
+    display: flex;
+}
+
+main .loghi-flex {
+    flex: 0 0 calc((100% / 3) );
+    margin-top: 6em;
     display: flex;
     flex-wrap: wrap;
-    
 }
+
+main .loghi {
+    flex: 0 0 calc(100% / 2);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .loghi .logo {
+    flex: 0 0 100%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .loghi .logo img {
+    width: 40%;
+    height: fit-content;
+    filter: invert(91%) sepia(100%) saturate(0%) hue-rotate(302deg) brightness(105%) contrast(102%); /* filtro trovato con https://codepen.io/sosuke/pen/Pjoqqp */
+}
+
+/* regole singoli loghi */
+.loghi .designit {
+    background-color: rgb(162,211,155);
+    border: solid 15px rgb(209,233,205);
+}
+
+.loghi .asu-uni {
+    background-color: rgb(97,8,43);
+}
+
+.loghi .uf-uni {
+    background-color: rgb(0,147,206);
+}
+
+.loghi .topps {
+    background-color: rgb(255,28,28);
+}
+
+.loghi .bicycle {
+    background-color: rgb(213,0,31);
+}
+
+.loghi .hearts {
+    background-color: rgb(180,208,231);
+}
+
+.loghi .lonely-planet {
+    background-color: rgb(13,36,129);
+}
+
+.loghi .clear-channel {
+    background-color: rgb(255,216,48);
+}
+
+/* logo selezionato */
+#sezione-loghi-flex .selezionato {
+    background-color: rgb(245,245,245);
+    flex-direction: column;
+}
+
+#sezione-loghi-flex .selezionato #logo-container {
+    width: 85%;
+    margin-inline: auto;
+}
+
+#sezione-loghi-flex .selezionato #logo-selezionato {
+    height: 20%;
+    width: fit-content;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#sezione-loghi-flex .selezionato #logo-selezionato img {
+    height: 100%;
+}
+
+#sezione-loghi-flex .selezionato hr {
+    margin-bottom: 30px;
+    width: 70px;
+}
+
+#sezione-loghi-flex .selezionato #testimonianza {
+    font-size: 0.9em;
+}
+
+#sezione-loghi-flex .selezionato #testimonianza p {
+    margin-bottom: 2em;
+}
+
+
+/* PROVA GRATUITA */
