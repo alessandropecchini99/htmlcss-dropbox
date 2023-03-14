@@ -29,6 +29,8 @@ h3 {
     font-size: 1.5em;
 }
 
+
+
 /*--------- HEADER ---------*/
 
 /* NAV */
@@ -104,6 +106,7 @@ header section h1 {
     margin-top: 1em;
     margin-bottom: 0.2em;
 }
+
 
 
 /*--------- MAIN ---------*/
@@ -410,11 +413,12 @@ main .loghi .logo img {
 #prova-flex {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 40%;
     height: fit-content;
     margin-inline: auto;
-    padding-top: 4em;
-    padding-bottom: 4em;
+    padding-top: 91.5px;
+    padding-bottom: 91.5px;
 }
 
 #prova-flex h2 {
@@ -426,4 +430,87 @@ main .loghi .logo img {
     border: 0px;
     background-color: white;
     padding: 10px 30px;
+    min-width: 190px;
+}
+
+
+/* DOMANDE FREQUENTI */
+main .faq {
+    margin-top: 9em;
+    margin-bottom: 8em;
+}
+
+main .faq h2 {
+    margin-bottom: 1.7em;
+}
+
+main .faq .faq-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.7em;
+    margin-bottom: 1.7em;
+}
+
+main .faq .faq-flex i {
+    margin-right: 2em;
+    font-size: 12px;
+    align-self: center;
+}
+
+
+
+/*--------- FOOTER ---------*/
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer .big-container {
+    padding-top: 4.5em;
+}
+
+/* liste di link */
+footer .big-container #footer-list {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4.5em;
+}
+
+footer .big-container #footer-list ul {
+    list-style: none;
+}
+
+footer .big-container #footer-list li {
+    margin-top: 0.7em;
+}
+
+footer .big-container #footer-list li p {
+    font-size: 0.8em;
+}
+
+footer .big-container h3 {
+    font-size: 1.3em;
+    padding-bottom: 0.7em;
+}
+
+/* hr */
+footer hr {
+    width: 10%;
+    border: solid 1px rgb(105, 105, 105);
+}
+
+/* selezione lingua */
+footer #footer-lang {
+    font-size: 15px;
+    margin-top: 2.5em;
+    padding-bottom: 2.5em;
+    color: rgb(105, 105, 105);
+}
+
+footer #footer-lang span {
+    margin-left: 5px;
+}
+
+footer #footer-lang .fa-caret-up {
+    vertical-align: bottom;
 }
