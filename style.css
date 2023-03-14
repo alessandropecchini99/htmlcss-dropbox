@@ -56,6 +56,8 @@ header nav ul {
     align-items: center;
     list-style: none;
     height: 77.5px;
+    margin-right: 1.5em;
+    margin-left: 1.5em;
 }
 
 header nav a {
@@ -64,6 +66,9 @@ header nav a {
     color: black;
 }
 
+header nav .button {
+    margin-left: 1em;
+}
 header nav .link:hover {
     background-color: rgb(196, 196, 196);
 }
@@ -481,6 +486,7 @@ footer .big-container {
 footer .big-container #footer-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding-bottom: 4.5em;
 }
 
@@ -517,6 +523,10 @@ footer #footer-lang {
 
 footer #footer-lang span {
     margin-left: 5px;
+}
+
+footer #footer-lang ul {
+    min-width: 160px;
 }
 
 footer #footer-lang .fa-caret-up {
