@@ -21,12 +21,12 @@ body {
 }
 
 .big-container {
-    width: 1350px;
+    width: 65%;
     margin-inline: auto;
 }
 
 .container {
-    width: 1000px;
+    width: 55%;
     margin-inline: auto;
 }
 
@@ -150,6 +150,10 @@ main h2 {
     margin-bottom: 3.5rem;
 }
 
+#fatturazione .fa-solid {
+    cursor: pointer;
+}
+
 #fatturazione .blue-dot {
     color: #0061FF;
 }
@@ -162,7 +166,7 @@ main h2 {
 /* container */
 .piani-flex .piani .piano-container {
     font-size: 0.9em;
-    width: 80%;
+    width: 75%;
     margin-inline: auto;
     margin-top: 1.5em;
 }
@@ -290,6 +294,7 @@ main h2 {
 }
 
 .contatto-dropbox #info-contatto button {
+    cursor: pointer;
     padding: 9px 16px;  
     background-color: white;
     border: solid 1px grey;
@@ -297,6 +302,10 @@ main h2 {
 
 
 /* SEZIONE "BUSINESS" */
+#dropbusiness-h2 {
+    margin-bottom: 2.5em;
+}
+
 main #flex-business {
     margin-inline: auto;
     display: flex;
@@ -312,7 +321,6 @@ main #flex-business {
 
 #flex-business img {
     width: 100%;
-    margin-top: 2.5em;
 }
 
 #flex-business p {
@@ -322,10 +330,11 @@ main #flex-business {
 /* dati business */
 main section .dati-business {
     width: 50%;
+    margin-top: 7em;
+    margin-bottom: 6em;
 }
 
 main section .dati-business h2{
-    margin-top: 7em;
     margin-bottom: 2em;
 }
 
@@ -336,8 +345,7 @@ main #sezione-loghi-flex {
 }
 
 main .loghi-flex {
-    flex: 0 0 calc((100% / 3) );
-    margin-top: 6em;
+    flex: 0 0 calc(100% / 3);
     display: flex;
     flex-wrap: wrap;
 }
@@ -365,35 +373,65 @@ main .loghi .logo img {
 /* regole singoli loghi */
 .loghi .designit {
     background-color: rgb(162,211,155);
+}
+
+.loghi .designit:hover {
     border: solid 15px rgb(209,233,205);
 }
 
 .loghi .asu-uni {
     background-color: rgb(97,8,43);
 }
+.loghi .asu-uni:hover {
+    border: solid 15px rgb(164, 66, 105);
+}
 
 .loghi .uf-uni {
     background-color: rgb(0,147,206);
+}
+
+.loghi .uf-uni:hover {
+    border: solid 15px rgb(92, 183, 219);
 }
 
 .loghi .topps {
     background-color: rgb(255,28,28);
 }
 
+.loghi .topps:hover {
+    border: solid 15px rgb(250, 122, 122);
+}
+
 .loghi .bicycle {
     background-color: rgb(213,0,31);
+}
+
+.loghi .bicycle:hover {
+    border: solid 15px rgb(214, 89, 108);
 }
 
 .loghi .hearts {
     background-color: rgb(180,208,231);
 }
 
+.loghi .hearts:hover {
+    border: solid 15px rgb(107, 168, 219);
+}
+
 .loghi .lonely-planet {
     background-color: rgb(13,36,129);
 }
 
+.loghi .lonely-planet:hover {
+    border: solid 15px rgb(65, 81, 145);
+}
+
 .loghi .clear-channel {
     background-color: rgb(255,216,48);
+}
+
+.loghi .clear-channel:hover {
+    border: solid 15px rgb(241, 227, 168);
 }
 
 /* logo selezionato */
@@ -441,7 +479,7 @@ main .loghi .logo img {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 40%;
+    width: 60%;
     height: fit-content;
     margin-inline: auto;
     padding-top: 91.5px;
@@ -453,6 +491,7 @@ main .loghi .logo img {
 }
 
 #prova-flex button {
+    cursor: pointer;
     margin-top: 10px;
     border: 0px;
     background-color: white;
@@ -479,6 +518,7 @@ main .faq .faq-flex {
 }
 
 main .faq .faq-flex i {
+    cursor: pointer;
     margin-right: 2em;
     font-size: 12px;
     align-self: center;
@@ -509,6 +549,7 @@ footer .big-container #footer-list ul {
 }
 
 footer .big-container #footer-list li {
+    cursor: pointer;
     margin-top: 0.7em;
 }
 
@@ -535,14 +576,16 @@ footer #footer-lang {
     color: rgb(105, 105, 105);
 }
 
+footer #footer-lang .fa-solid {
+    cursor: pointer;
+}
+
 footer #footer-lang span {
+    cursor: pointer;
     margin-left: 5px;
 }
 
-footer #footer-lang ul {
-    min-width: 160px;
-}
-
 footer #footer-lang .fa-caret-up {
+    cursor: pointer;
     vertical-align: bottom;
 }
