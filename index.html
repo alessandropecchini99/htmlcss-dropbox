@@ -20,23 +20,23 @@
 
         <!-- NAVIGATION BAR -->
         <nav>
-            <div>
+            <div id="left">
                 <ul>
-                    <li> 
+                    <li id="nav-img"> 
                         <a href="#"> <img src="img-dropbox/img/logo-small.png" alt="logo"> </a>
                     </li>
-                    <li> <a href="#" class="link">Perché Dropbox</a> </li>
-                    <li> <a href="#" class="link">Funzioni</a> </li>
-                    <li> <a href="#" class="link">Piani e Prezzi</a> </li>
+                    <li> <a href="#">Perché Dropbox</a> </li>
+                    <li> <a href="#">Funzioni</a> </li>
+                    <li> <a href="#">Piani e Prezzi</a> </li>
                 </ul>
             </div>
-            <div>
+            <div id="right">
                 <ul>
-                    <li> <a href="#" class="link">Supporto</a> </li>
-                    <li> <a href="#" class="link">Contatta l'ufficio vendite</a> </li>
-                    <li> <a href="#" class="link">Accedi</a> </li>
-                    <li>
-                        <button class="button hover-button">Inizia</button>
+                    <li> <a href="#">Supporto</a> </li>
+                    <li> <a href="#">Contatta l'ufficio vendite</a> </li>
+                    <li> <a href="#">Accedi</a> </li>
+                    <li id="nav-btn">
+                        <button class="button">Inizia</button>
                     </li>
                 </ul>
             </div>
@@ -49,6 +49,7 @@
                 <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
 
                 <div id="section-flex">
+                    <!-- quando stringo voglio immagine tra h1 e testo -->
                     <div id="section-text">
                         <p>Finalmente tutti i tuoi strumenticontenuti e collaboratori sonaccessibili dallo stesso posto. <br>
                         Dropbox Business è più di uno spazio darchiviazione sicuro: è un modintelligente e integrato per ottimizzaril flusso di lavoro esistente.
@@ -74,17 +75,19 @@
         <!-- SECTION - PIANI E OFFERTE -->
 
         <!-- SELEZIONE MENSILE/ANNUALE -->
+        <!-- radio button selezione -->
         <section class="container">
             <h2>Trova il piano di business che fa per te</h2>
 
             <div id="fatturazione">
-                <i class="fa-regular fa-circle select-circle"></i>
+                <i class="fa-solid fa-circle-dot blue-dot"></i>
                 <span class="select-text">Fatturazione Mensile</span>
-                <i class="fa-regular fa-circle"></i>
+                <i class="fa-solid fa-circle-dot"></i>
                 <span>Fatturazione Annuale</span>
             </div>
 
             <!-- PIANI -->
+            <!-- ridimensionare font-size stringendo la pagina -->
             <!-- piano 1 -->
             <div class="piani-flex">
 
@@ -208,7 +211,7 @@
 
                     <div class="piano-container">
                         <h3>Enterprise</h3>
-                        <p class="prezzo-piano"></p>
+                        <p class="prezzo-piano"> - </p>
                         <p class="info-prezzo-piano"> &nbsp; </p>
 
                         <ul class="fa-ul">
