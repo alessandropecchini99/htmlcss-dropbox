@@ -346,6 +346,7 @@ main #sezione-loghi-flex {
 
 main .loghi-flex {
     flex: 0 0 calc(100% / 3);
+    aspect-ratio: 1 / 1;
     display: flex;
     flex-wrap: wrap;
 }
@@ -354,11 +355,11 @@ main .loghi {
     flex: 0 0 calc(100% / 2);
     display: flex;
     flex-wrap: wrap;
+    aspect-ratio: 1 / 1;
 }
 
 main .loghi .logo {
     flex: 0 0 100%;
-    aspect-ratio: 1 / 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -438,6 +439,7 @@ main .loghi .logo img {
 #sezione-loghi-flex .selezionato {
     background-color: rgb(245,245,245);
     flex-direction: column;
+    overflow-y: auto;
 }
 
 #sezione-loghi-flex .selezionato #logo-container {
