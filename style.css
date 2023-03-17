@@ -448,18 +448,17 @@ main .loghi .logo img {
 }
 
 #sezione-loghi-flex .selezionato #logo-selezionato {
-    height: 20%;
     width: fit-content;
-    margin-top: 55px;
-    margin-bottom: 55px;
+    margin-bottom: 5%;
+    margin-top: 10%;
 }
 
 #sezione-loghi-flex .selezionato #logo-selezionato img {
-    height: 100%;
+    max-width: 100%;
 }
 
 #sezione-loghi-flex .selezionato hr {
-    margin-bottom: 55px;
+    margin-bottom: 5%;
     width: 70px;
 }
 
@@ -468,7 +467,7 @@ main .loghi .logo img {
 }
 
 #sezione-loghi-flex .selezionato #testimonianza p {
-    margin-bottom: 55px;
+    margin-bottom: 5%;
 }
 
 
